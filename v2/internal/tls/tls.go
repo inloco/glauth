@@ -57,7 +57,7 @@ func MakeTLS(clientCert, key []byte) (*tls.Config, error) {
 
 	return &tls.Config{
 		RootCAs:      rootCAs,
-		MinVersion:   tls.VersionTLS10,
+		MinVersion:   tls.VersionTLS12,
 		MaxVersion:   tls.VersionTLS13,
 		Certificates: []tls.Certificate{cert},
 	}, nil
