@@ -79,7 +79,7 @@ func MakeTLS(clientCert, key []byte, legacy bool) (*tls.Config, error) {
 	if legacy {
 		return &tls.Config{
 			RootCAs:                  rootCAs,
-			MinVersion:               tls.VersionTLS10,
+			MinVersion:               tls.VersionTLS12,
 			MaxVersion:               tls.VersionTLS13,
 			PreferServerCipherSuites: true,
 			CipherSuites:             nil,
