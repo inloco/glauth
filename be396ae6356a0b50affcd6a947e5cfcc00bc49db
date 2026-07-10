@@ -1,0 +1,22 @@
+{
+  "event": "security_override",
+  "timestamp": "2026-07-10T12:48:33.426103+00:00",
+  "user": "paulo.luna@incognia.com",
+  "branch": "incognia",
+  "files": [
+    "v2/misc/sambaad/samba-tls/server.csr",
+    "v2/docker/Dockerfile-standalone",
+    "v2/misc/sambaad/samba-ca.pem",
+    "v2/misc/sambaad/samba-tls/server.crt",
+    "v2/misc/sambaad/samba-tls/server.key",
+    "v2/docker/Dockerfile-plugins",
+    "v2/misc/sambaad/samba-tls/ca.crt",
+    "v2/misc/sambaad/samba-tls/ca.key"
+  ],
+  "detectors": [
+    "Gitleaks: possible-raw-pii-email",
+    "Gitleaks: incognia-api-credentials",
+    "PrivateKey"
+  ],
+  "secrets_found": 27
+}
